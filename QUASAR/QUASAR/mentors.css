@@ -1,0 +1,117 @@
+ /* Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fbc2eb 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2c3e50;
+}
+
+/* Header */
+.header {
+    background: #ffffff;
+    width: 100%;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #34495e;
+    letter-spacing: 2px;
+}
+
+/* Mentors Section */
+.mentors-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mentors-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2.5rem;
+    border-bottom: 4px solid #e74c3c;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Mentors Grid */
+.mentors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    justify-items: center;
+}
+
+/* Mentor Card */
+.mentor-card {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 6px solid #e74c3c;
+}
+
+.mentor-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Mentor Info */
+.mentor-info {
+    padding: 1.5rem;
+}
+
+.mentor-info h3 {
+    margin: 1rem 0 0.5rem;
+    color: #34495e;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.mentor-info p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+}
+
+/* Hover Effect */
+.mentor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-top: 6px solid #3498db;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .mentors-section {
+        padding: 1.5rem;
+    }
+
+    .mentors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mentor-card img {
+        height: 180px;
+    }
+}
